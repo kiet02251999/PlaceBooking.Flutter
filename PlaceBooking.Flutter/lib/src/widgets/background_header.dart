@@ -27,8 +27,8 @@ class BackgroundHeaderBox extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Color.fromRGBO( 207, 5, 211, 1),
-                  Color.fromRGBO(236, 104, 77, 1)
+                  Color.fromRGBO( 8, 138, 235, 1),
+                  Color.fromRGBO(8, 240, 235, 1)
                 ],
               ),
             ),

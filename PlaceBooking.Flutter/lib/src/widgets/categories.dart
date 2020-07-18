@@ -7,7 +7,6 @@ import 'package:booking_place/src/constants/theme.dart';
 import 'package:booking_place/src/models/category_model.dart';
 import 'package:booking_place/src/providers/category_provider.dart';
 import 'package:booking_place/src/utils/device_utils.dart';
-
 import 'inner_shadow.dart';
 
 class CategoriesList extends StatefulWidget {
@@ -78,7 +77,7 @@ class _CategoriesListState extends State<CategoriesList> {
 
   @override
   Widget build(BuildContext context) {
-    final categories = Provider.of<CategoryProvider>(context).categorys;
+    final categories = Provider.of<CategoryProvider>(context).categories;
 
     return Column(
       children: <Widget>[
