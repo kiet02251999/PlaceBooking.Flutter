@@ -1,12 +1,12 @@
+import 'package:booking_place/src/providers/category_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 //
 import 'package:booking_place/src/constants/theme.dart';
 import 'package:booking_place/src/models/category_model.dart';
-import 'package:booking_place/src/providers/category_provider.dart';
 import 'package:booking_place/src/utils/device_utils.dart';
+import 'package:provider/provider.dart';
 import 'inner_shadow.dart';
 
 class CategoriesList extends StatefulWidget {

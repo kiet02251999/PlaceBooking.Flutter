@@ -6,12 +6,14 @@ import 'package:booking_place/src/widgets/background_header.dart';
 import 'package:booking_place/src/widgets/categories.dart';
 import 'package:booking_place/src/constants/theme.dart';
 
+//Ctrl + Alt + L
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
   Widget _buildHeader(BuildContext context) {
     return SafeArea(
       child: Column(
