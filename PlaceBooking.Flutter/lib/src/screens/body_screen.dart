@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
 //
-
-enum SingingCharacter { lafayette, jefferson }
-
+import 'package:booking_place/src/widgets/background_header.dart';
+import 'package:booking_place/src/widgets/categories.dart';
+import 'package:booking_place/src/constants/theme.dart';
 class MyApp extends StatelessWidget {
   static const String _title = 'Flutter Code Sample';
 
@@ -22,14 +23,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
+enum SingingCharacter { lafayette, jefferson }
+
 class MyStatefulWidget extends StatefulWidget {
   MyStatefulWidget({Key key}) : super(key: key);
 
   @override
   _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
 }
-
-
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   SingingCharacter _character = SingingCharacter.lafayette;
