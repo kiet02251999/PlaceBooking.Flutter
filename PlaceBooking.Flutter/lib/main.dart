@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
               future: _initApp(context),
               builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
                 var loading = Provider.of<AccountProvider>(context);
-                if(snapshot.hasData){
+                if (snapshot.hasData) {
                   return MaterialApp(
                       title: 'Booking Place App',
                       debugShowCheckedModeBanner: false,
