@@ -6,6 +6,8 @@ import 'package:booking_place/src/widgets/background_header.dart';
 import 'package:booking_place/src/widgets/categories.dart';
 import 'package:booking_place/src/constants/theme.dart';
 
+import 'body_screen.dart';
+
 //Ctrl + Alt + L
 class HomeScreen extends StatefulWidget {
   @override
@@ -59,6 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
+          MyStatefulWidget(),
         ],
       ),
     );
