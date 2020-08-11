@@ -17,6 +17,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildHeader(BuildContext context) {
+    String dropdownValue = '1';
     return SafeArea(
       child: Column(
         children: <Widget>[
@@ -61,11 +62,58 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
+          new TextField(
+            style: TextStyle(fontSize: 20,color: Colors.black),
+            decoration: InputDecoration(labelText: "Nơi bạn muốn đến",
+                icon: Icon(Icons.local_airport),
+                labelStyle: TextStyle(color: Colors.black,fontSize: 20)
+            ),
+          ),
+          new  Text(
+             'Số lượng người ',
+             textAlign: TextAlign.center,
+             overflow: TextOverflow.ellipsis,
+             style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+           DropdownButton<String>(
+              value: dropdownValue,
+              icon: Icon(Icons.arrow_downward),
+              iconSize: 24,
+              elevation: 16,
+              style: TextStyle(color: Colors.deepPurple),
+              underline: Container(
+              height: 2,
+              color: Colors.deepPurpleAccent,
+              ),
+              onChanged: (String newValue) {
+              setState(() {
+              dropdownValue = newValue;
+              });
+              },
+              items: <String>['1', '2', '3', '4','5','6','7','8','9','10','10 - 20']
+                  .map<DropdownMenuItem<String>>((String value) {
+              return DropdownMenuItem<String>(
+              value: value,
+              child: Text(value),
+              );
+              }).toList(),
+        ),
+          Stack(
+              children: <Widget>[
+              TextField(
+              style: TextStyle(fontSize: 20,color: Colors.black),
+              decoration: InputDecoration(labelText: "Ngày nhận trả phòng",
+              icon: Icon(Icons.date_range),
+              labelStyle: TextStyle(color: Colors.black,fontSize: 20)
+              ),
+          ),
+          ]),
           MyStatefulWidget(),
         ],
       ),
     );
   }
+
 
   @override
   Widget build(BuildContext context) {

@@ -39,7 +39,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     return Column(
       children: <Widget>[
         ListTile(
-          title: const Text('Đi công tác'),
+          title: const Text('Đi công tác',
+            style: TextStyle(fontSize: 20,color: Colors.black),
+          ),
           leading: Radio(
             value: SingingCharacter.lafayette,
             groupValue: _character,
@@ -51,7 +53,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),
         ),
         ListTile(
-          title: const Text('Đi du lịch'),
+          title: const Text('Đi du lịch',
+            style: TextStyle(fontSize: 20,color: Colors.black),
+          ),
           leading: Radio(
             value: SingingCharacter.jefferson,
             groupValue: _character,
